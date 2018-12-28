@@ -10,7 +10,7 @@ class SendStuffMailer < ApplicationMailer
     @email.to = [{"email": email}]
     @email.html_content = html("a")
     @email.subject = "TESTESTEST"
-    @send_in_blue.send_transac_email(@email)
+    # @send_in_blue.send_transac_email(@email)
   end
   
   
