@@ -5,7 +5,7 @@ class MailingsController < ApplicationController
   # GET /mailings.json
   def index
     @mailings = Mailing.all
-    SendStuffMailer.send_email
+    SendStuffMailer.send_email("Pablocm90@gmail.com", "TESTEST")
   end
 
   # GET /mailings/1
