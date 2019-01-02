@@ -7,26 +7,11 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script type="text/javascript">
-      (function(w,d){
-        w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];
-        function r(){var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://widget.helpcrunch.com/';(d.body||d.head).appendChild(s);}
-        if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
-      })(window, document)
-    </script>
-
-    <script type="text/javascript">
-      HelpCrunch('init', 'mail-test-sa', {
-        applicationId: 5075,
-        applicationSecret: '0C40uQe5cR6jShCoX2S8/21ImEaRZ6htrpqvOA2iuxod9SPTXoY4xAlPWxvsUoHGtb0toSSfq8LxjywkOdLE0Q=='
-      });
-
-      HelpCrunch('showChatWidget');
-    </script>
   </head>
   
 
   <body>
     <%= yield %>
+    <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/ccd92f84dbed54ace5316f70e56f0ac90cb10225d1cee1297d667e8a5c61c205.js"></script>
   </body>
 </html>
